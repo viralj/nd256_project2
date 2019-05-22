@@ -57,7 +57,7 @@ Here is some boiler plate code and some example test cases to get you started on
 
 For this problem, the goal is to write code for finding all files under a directory (and all directories beneath it) that end with ".c"
 
-Here is an example of a test directory listing, which can be downloaded [here][`https://s3.amazonaws.com/udacity-dsand/testdir.zip`]:
+Here is an example of a test directory listing, which can be downloaded [here][https://s3.amazonaws.com/udacity-dsand/testdir.zip]:
 
 `./testdir
 ./testdir/subdir1
