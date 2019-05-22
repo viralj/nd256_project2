@@ -87,7 +87,7 @@ Python's os module will be useful—in particular, you may want to use the follo
 
 [`os.path.join(...)`](https://docs.python.org/3.7/library/os.path.html#os.path.join)
 
-# Note: os.walk() is a handy Python method which can achieve this task very easily. However, for this problem you are not allowed to use os.walk().
+##### Note: `os.walk()` is a handy Python method which can achieve this task very easily. However, for this problem you are not allowed to use `os.walk()`.
 
 Here is some code for the function to get you started:
 
@@ -111,10 +111,11 @@ Here is some code for the function to get you started:
         return None
 
 OS Module Exploration Code
-`#Locally save and call this file ex.py`
-
-`#Code to demonstrate the use of some of the OS modules in python`
-
+    
+    ##Locally save and call this file ex.py
+    
+    #Code to demonstrate the use of some of the OS modules in python
+    
     import os
 
     # Let us print the files in the directory in which you are running this script
@@ -124,4 +125,4 @@ OS Module Exploration Code
     print (os.path.isfile("./ex.py"))
 
     # Does the file end with .py?
-print ("./ex.py".endswith(".py"))
+    print ("./ex.py".endswith(".py"))
