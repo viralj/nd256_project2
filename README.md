@@ -79,13 +79,13 @@ Here is an example of a test directory listing, which can be downloaded [here](h
 
 Python's os module will be useful—in particular, you may want to use the following resources:
 
-    [os.path.isdir(path)](https://docs.python.org/3.7/library/os.path.html#os.path.isdir)
+[`os.path.isdir(path)`](https://docs.python.org/3.7/library/os.path.html#os.path.isdir)
 
-os.path.isfile(path)
+[`os.path.isfile(path)`](https://docs.python.org/3.7/library/os.path.html#os.path.isfile)
 
-os.listdir(directory)
+[`os.listdir(directory)`](https://docs.python.org/3.7/library/os.html#os.listdir)
 
-os.path.join(...)`
+[`os.path.join(...)`](https://docs.python.org/3.7/library/os.path.html#os.path.join)
 
 # Note: os.walk() is a handy Python method which can achieve this task very easily. However, for this problem you are not allowed to use os.walk().
 
