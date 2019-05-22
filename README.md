@@ -1,11 +1,11 @@
 # nd256_project2
 
-Udacity's Data Structures &amp; Algorithms Nanodegree program project 2
+### Udacity's Data Structures &amp; Algorithms Nanodegree program project 2
 
 ------------------------------------------------------
 
 ## Problem 1
-# Least Recently Used Cache
+#### Least Recently Used Cache
 
 We have briefly discussed caching as part of a practice problem while studying hash maps.
 
@@ -53,7 +53,7 @@ Here is some boiler plate code and some example test cases to get you started on
 ------------------------------------------------------
 
 ## Problem 2
-# Finding Files
+#### Finding Files
 
 For this problem, the goal is to write code for finding all files under a directory (and all directories beneath it) that end with ".c"
 
