@@ -7,4 +7,4 @@ that directory. After that, for each item I am checking if its directory or not 
 directories list, else check for file and with extension by suffix passed.
 
 
-Time complexity is `O(depth * average number of directories in each level)` and space complexity os `O(depth)`.
+Time complexity is `O(depth * average number of directories in each level)` and space complexity is `O(depth)`.
