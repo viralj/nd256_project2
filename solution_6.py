@@ -73,7 +73,13 @@ def intersection(llist_1, llist_2):
         _set2.add(_current.value)
         _current = _current.next
 
-    _set = _set1.intersection(_set2)
+    _temp_list = sorted([_set1, _set2], key=len)
+    _set = set()
+
+    for s1 in _temp_list[0]:
+        if s1 in _temp_list[1]:
+            _set.add(s1)
+
     result = LinkedList()
     for num in _set:
         result.append(num)
