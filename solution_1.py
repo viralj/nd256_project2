@@ -5,7 +5,7 @@ class LRU_Cache(object):
 
     def __init__(self, capacity):
         # Initialize class variables
-        
+
         # Initialize class variables _capacity and _cache
         self._capacity = capacity
         self._cache = collections.OrderedDict()
@@ -31,15 +31,16 @@ class LRU_Cache(object):
             # from cache 
             if len(self._cache) >= self._capacity:
                 self._cache.popitem(last=False)
-        
+
         # Assigning value to the key
         self._cache[key] = value
 
 
+# tests
 our_cache = LRU_Cache(5)
 
 our_cache.set(1, 1)
 our_cache.set(2, 2)
-our_cache.get(1)       # returns 1
-our_cache.get(2)       # returns 2
-our_cache.get(3)       # return -1
+print(our_cache.get(1))  # returns 1
+print(our_cache.get(2))  # returns 2
+print(our_cache.get(3))  # return -1
