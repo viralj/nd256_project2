@@ -3,4 +3,4 @@
 For this problem, I am calculating occurrences of each characters in data string, sort and encode with minimum code 
 length.
 
-Time complexity for this is `O(n)` and space complexity is `O(distinct_characters)`.
+Time complexity for this is `O(nlogn)` and space complexity is `O(logn)`.
