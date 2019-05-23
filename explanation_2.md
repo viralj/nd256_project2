@@ -5,3 +5,6 @@ and exist, I am using two lists to hold information in it. One is to hold direct
 value of files including path. Using while loop, I am removing first value of directories and getting all items from 
 that directory. After that, for each item I am checking if its directory or not and if its directory, add it to 
 directories list, else check for file and with extension by suffix passed.
+
+
+Time complexity is `O(depth * average number of directories in each level)` and space complexity os `O(depth)`.
