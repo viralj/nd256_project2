@@ -47,6 +47,7 @@ def huffman_decoding(data, tree):
     return decoded_str
 
 
+# tests
 if __name__ == "__main__":
     codes = {}
 
