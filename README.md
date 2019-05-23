@@ -187,7 +187,7 @@ For Example:
 
 ------------------------------------------------------
 
-## Problem 3
+## Problem 4
 #### Active Directory
 
 In Windows Active Directory, a group can consist of user(s) and group(s) themselves. We can construct this hierarchy as such. Where User is represented by str representing their ids.
@@ -236,3 +236,44 @@ Write a function that provides an efficient look up of whether the user is in a 
           group(class:Group): group to check user membership against
         """
         return None
+
+------------------------------------------------------
+
+## Problem 5
+#### Blockchain
+
+A [Blockchain](https://en.wikipedia.org/wiki/Blockchain) is a sequential chain of records, similar to a linked list. Each block contains some information and how it is connected related to the other blocks in the chain. Each block contains a cryptographic hash of the previous block, a timestamp, and transaction data. For our blockchain we will be using a [SHA-256](https://en.wikipedia.org/wiki/SHA-2) hash, the [Greenwich Mean Time](https://en.wikipedia.org/wiki/Greenwich_Mean_Time) when the block was created, and text strings as the data.
+
+Use your knowledge of linked lists and hashing to create a blockchain implementation.
+
+
+We can break the blockchain down into three main parts.
+
+First is the information hash:
+
+    import hashlib
+    
+    def calc_hash(self):
+          sha = hashlib.sha256()
+    
+          hash_str = "We are going to encode this string of data!".encode('utf-8')
+    
+          sha.update(hash_str)
+    
+          return sha.hexdigest()
+
+We do this for the information we want to store in the block chain such as transaction time, data, and information like the previous chain.
+
+The next main component is the block on the blockchain:
+
+    class Block:
+    
+        def __init__(self, timestamp, data, previous_hash):
+          self.timestamp = timestamp
+          self.data = data
+          self.previous_hash = previous_hash
+          self.hash = self.calc_hash()
+
+Above is an example of attributes you could find in a `Block` class.
+
+Finally you need to link all of this together in a block chain, which you will be doing by implementing it in a linked list. All of this will help you build up to a simple but full blockchain implementation!
